@@ -1,0 +1,29 @@
+{
+    "name": "box-generator",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "autoprefixer": "^10.2.5",
+        "postcss": "^8.2.8",
+        "tailwindcss": "^2.0.3"
+    },
+    "devDependencies": {
+        "cssnano": "^4.1.10",
+        "postcss-cli": "^8.3.1",
+        "postcss-import": "^14.0.0",
+        "postcss-nested": "^5.0.5",
+        "prettier": "^2.2.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "tailwind:prod": "NODE_ENV=production postcss src/css/styles.css --output dist/web.css --verbose",
+        "tailwind:dev": "postcss src/css/styles.css --output dist/web.css --watch --verbose"
+    },
+    "author": "",
+    "license": "ISC",
+    "prettier": {
+        "printWidth": 120,
+        "tabWidth": 4
+    }
+}

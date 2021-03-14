@@ -1,0 +1,4 @@
+# Folders that not need to be present in the repo
+dist
+.idea
+node_modules
