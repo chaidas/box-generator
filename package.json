@@ -17,8 +17,8 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "tailwind:prod": "NODE_ENV=production postcss src/css/styles.css --output dist/web.css --verbose",
-        "tailwind:dev": "postcss src/css/styles.css --output dist/web.css --watch --verbose"
+        "tailwind:prod": "NODE_ENV=production postcss css/web.css --output dist/web.css --verbose",
+        "tailwind:dev": "postcss css/web.css --output dist/web.css --watch --verbose"
     },
     "author": "",
     "license": "ISC",
