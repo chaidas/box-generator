@@ -1,0 +1,27 @@
+<svg width="120mm" height="120mm" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+    <rect
+            style="stroke-width: 0.1; stroke: #000000; fill: white; fill-rule: evenodd"
+            x="0"
+            y="0"
+            width="120"
+            height="120"
+    />
+    <rect
+            fill="white"
+            style="stroke-width: 0.1; stroke: #555555; stroke-opacity: 1"
+            id="rect10"
+            width="25"
+            height="25"
+            x="10"
+            y="10"
+    />
+    <rect
+            fill="white"
+            style="stroke-width: 0.1; stroke: #555555; stroke-opacity: 1"
+            id="rect10"
+            width="60"
+            height="25"
+            x="35"
+            y="10"
+    />
+</svg>

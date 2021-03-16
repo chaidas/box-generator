@@ -12,49 +12,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet" />
     </head>
-    <body class="flex flex-col h-full">
-        <div class="bg-white flex-none print:hidden flex flex-row items-center p-4 shadow-lg z-10">
-            <h1 class="text-4xl logo">BoxCreator</h1>
-            <div class="ml-auto">
-                <label for="w">width (mm):</label>
-                <input id="w" type="number" class="leading-none p-2 border border-gray-400 rounded w-16" min="0" max="100" />
-                <label for="h">height (mm):</label>
-                <input id="h" type="number" class="leading-none p-2 border border-gray-400 rounded w-16" min="0" max="100" />
-                <label for="d">depth (mm):</label>
-                <input id="d" type="number" class="leading-none p-2 border border-gray-400 rounded w-16" min="0" max="50" />
-            </div>
-        </div>
-        <div class="bg-gray-100 h-full p-8 print:p-0 print:bg-transparent">
-            <div id="svg_canvas">
-                <svg width="120mm" height="120mm" viewbox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-                    <rect
-                        style="stroke-width: 0.1; stroke: #000000; fill: white; fill-rule: evenodd"
-                        x="0"
-                        y="0"
-                        width="120"
-                        height="120"
-                    />
-                    <rect
-                        fill="white"
-                        style="stroke-width: 0.1; stroke: #555555; stroke-opacity: 1"
-                        id="rect10"
-                        width="25"
-                        height="25"
-                        x="10"
-                        y="10"
-                    />
-                    <rect
-                        fill="white"
-                        style="stroke-width: 0.1; stroke: #555555; stroke-opacity: 1"
-                        id="rect10"
-                        width="60"
-                        height="25"
-                        x="35"
-                        y="10"
-                    />
-                </svg>
-            </div>
-        </div>
-        <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+    <body class="h-full">
+        <div id="root" class="flex flex-col h-full"></div>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="dist/app.js"></script>
     </body>
 </html>

@@ -6,24 +6,40 @@
     "dependencies": {
         "autoprefixer": "^10.2.5",
         "postcss": "^8.2.8",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
         "tailwindcss": "^2.0.3"
     },
     "devDependencies": {
+        "@babel/cli": "^7.13.10",
+        "@babel/core": "^7.13.10",
+        "@babel/preset-env": "^7.13.10",
+        "@babel/preset-react": "^7.12.13",
+        "babel-loader": "^8.2.2",
         "cssnano": "^4.1.10",
         "postcss-cli": "^8.3.1",
         "postcss-import": "^14.0.0",
         "postcss-nested": "^5.0.5",
-        "prettier": "^2.2.1"
+        "prettier": "^2.2.1",
+        "webpack": "^5.26.0",
+        "webpack-cli": "^4.5.0"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "tailwind:prod": "NODE_ENV=production postcss css/web.css --output dist/web.css --verbose",
-        "tailwind:dev": "postcss css/web.css --output dist/web.css --watch --verbose"
+        "tailwind:dev": "postcss css/web.css --output dist/web.css --watch --verbose",
+        "dev": "webpack --devtool=source-map --watch",
+        "build": "NODE_ENV=production webpack --devtool=source-map"
     },
     "author": "",
     "license": "ISC",
     "prettier": {
         "printWidth": 120,
         "tabWidth": 4
-    }
+    },
+    "browserslist": [
+        "last 1 version",
+        "not dead",
+        ">1%"
+    ]
 }
